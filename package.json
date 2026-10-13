@@ -1,0 +1,38 @@
+{
+  "name": "solvia-store",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SOLVIA — premium e-commerce storefront and store management system (React + TypeScript client, Node + SQLite API).",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "setup": "node scripts/setup-db.mjs",
+    "images": "node --disable-warning=ExperimentalWarning scripts/generate-images.ts",
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs",
+    "start": "node --disable-warning=ExperimentalWarning server/index.ts",
+    "seed": "node --disable-warning=ExperimentalWarning server/scripts/seed.ts",
+    "create-admin": "node --disable-warning=ExperimentalWarning server/scripts/create-admin.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.server.json --noEmit",
+    "typecheck:server": "tsc -p tsconfig.server.json --noEmit",
+    "test": "node --disable-warning=ExperimentalWarning --test tests/api.test.ts tests/unit.test.ts",
+    "test:e2e": "node tests/e2e.mjs"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "optionalDependencies": {
+    "sharp": "^0.35.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "esbuild": "^0.28.0",
+    "playwright": "^1.56.0",
+    "typescript": "^6.0.0"
+  }
+}
