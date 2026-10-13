@@ -36,7 +36,7 @@ export const en = {
 
   'home.heroEyebrow': 'Curated everyday essentials',
   'home.heroTitle': 'Discover Better.\nShop Smarter.',
-  'home.heroBody': 'Explore thoughtfully selected products designed for everyday life — with clear prices, live stock and straightforward delivery.',
+  'home.heroBody': 'Explore thoughtfully selected products designed for everyday life, with clear prices, live stock and straightforward delivery.',
   'home.heroCta': 'Shop all products',
   'home.heroCta2': 'Browse categories',
   'home.categories': 'Shop by category',
